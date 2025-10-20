@@ -1,0 +1,14 @@
+{
+    "gunnarGame": {
+        "title": "Gunnar's Game",
+        "description": "A game to test your reaction time by reacting to a changing visual cue as quickly as possible.",
+        "thumbnail": "assets/game-thumb.jpg",
+        "gameUrl": "https://gunnar-schmidtt.github.io/project-bravo/"
+    },
+    "jaceGame": {
+        "title": "Jace's Game",
+        "description": "A game to test reaction time by dragging an emoticon into a box four different times.",
+        "thumbnail": "assets/game-thumb.png",
+        "gameUrl": "https://jcalvert22.github.io/project-bravo/"
+    }
+}
