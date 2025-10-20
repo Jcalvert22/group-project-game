@@ -1,0 +1,95 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.game-card {
+    transition: transform 0.2s;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    object-position: center;
+    background-color: #f8f9fa;
+}
+
+.card {
+    max-width: 100%;
+    transition: all 0.5s ease;
+}
+
+.card-body {
+    min-height: 180px;
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.favorite-btn:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+
+.favorite-btn.favorited {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+.favorite-btn.favorited:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.heart-icon {
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.favorite-btn.favorited .heart-icon {
+    content: "♥";
+}
+
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#gameContainer .col-md-6 {
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.5s ease;
+}
+
+.favorited-card {
+    order: -1;
+}
